@@ -1,24 +1,26 @@
-# 🎬 Movie Recommender 
+Movie Recommender with Box Office Insights
+A Python-based interactive movie recommendation system that filters and ranks movies using IMDb ratings, user votes, and worldwide box office collections.
 
-A Python-based command-line movie recommender system that filters and ranks movies based on user preferences like director, actor, runtime, and IMDb rating. It also computes a custom "genuine rating" that balances rating quality with popularity to recommend more reliable films.
+Features
+Cleans and preprocesses movie and box office datasets.
 
----
+Calculates a custom adjusted rating combining IMDb ratings, votes, and box office earnings.
 
-## 🚀 Features
+Filters movies by director, actor/actress, minimum runtime, and IMDb rating.
 
-- Filter movies by:
-  - 🎥 Director
-  - 🎭 Actor/Actress
-  - ⏱️ Minimum Runtime
-  - ⭐ Minimum IMDb Rating
-- Calculates a **"genuine rating"** that blends IMDb rating with vote count using a weighted scoring model
-- Sorts results by quality, popularity, and credibility
-- Outputs a ranked list of top 10 matching movies
-- Handles messy data (runtime, votes, etc.) gracefully
+Displays top recommended movies based on user inputs.
 
----
+Provides additional insights including:
 
-## 📊 Scoring Formula
+Director statistics (average ratings, runtimes, movie counts).
 
-By default, the recommender uses a weighted IMDb-style formula to compute a more trustworthy score:
+Genre statistics and trends.
+
+Yearly analysis of IMDb ratings and worldwide box office collections.
+
+Dataset
+movies_initial.csv: Contains movie metadata like title, year, director, genre, runtime, IMDb rating, votes, and cast.
+
+box_office.csv: Contains worldwide box office revenue and year of release.
+
 @grimroze
